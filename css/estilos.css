@@ -1,0 +1,446 @@
+@font-face{
+    font-family:"Pacifico";
+    src: url(../fonts/pacifico-Regular.ttf);
+}
+@font-face{
+    font-family:"Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family:"Montserrat";
+    font-weight:bold;
+    src: url(../fonts/Montserrat-bold.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+
+/*----------------------------------Base style----------------------------------*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.containerFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    width: 100%;
+}
+
+/*----------------------------------header style----------------------------------*/
+.mainHeader{
+    width: 100%;
+}
+.logo{
+    font-size: 1.8em;
+    color: #DE423A;
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+}
+.mainHeader_contactInfo_phone{
+    background: #DE423A;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+.mainHeader_contactInfo_address{
+    padding: 10px;
+    margin: 0;
+}
+.mainHeader [class*="icon-"]:before{
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+/*----------------------------------menu style----------------------------------*/
+.mainNav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+.icon-menu{
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.socialIcon [class*="icon-"]{
+    color: black;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+}
+.socialIcon_link{
+    text-decoration: none;
+}
+.menu{
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.85);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+.menuLink{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.menuLink:hover{
+    background: #DE423A;
+}
+.menuLinkSelect{
+    background: #DE423A;
+    
+}
+
+.mostrar{
+    height: 196px;
+}
+
+/*----------------------------------banner style----------------------------------*/
+.banner{
+    margin-top: -42px;
+    position: relative;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    z-index: 1000;
+    top: 0;
+}
+.bannerImg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.bannerContent{
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/*----------------------------------principal styles----------------------------------*/
+.groupColor .container{
+    background: #DE423A;
+    color: white;
+    padding: 10px;
+    text-align: center
+}
+.mainTitle{
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: "Pacifico", cursive;
+    font-weight: 100;
+}
+.columnTitle{
+    padding: 10px;
+}
+.mainAboutDescription .colum:nth-child(2){
+    padding: 10px;
+}
+.btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #DE423A;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+.groupTitle{
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+.todaySpecial .column{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.todaySpecial_img{
+    margin: auto;
+    max-width: 350px;
+}
+.todaySpecial_title{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.todaySpecial_price{
+    font-size: 1.5em;
+    color: #DE423A;
+    font-weight: bold;
+}
+
+/*----------------------------------footer styles----------------------------------*/
+.mainFooter{
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+.mainFooter [class*="icon-"]{
+    color: white;
+    text-decoration: none;
+}
+.mainFooter [class*="icon-"]:before{
+    position: relative;
+    top: 3px;
+    right: 5px;
+}
+
+/*----------------------------------responsive styles----------------------------------*/
+@media screen and (min-width:480px){
+    .logo{
+        color: white;
+    }
+    .mainHeader_contactInfo{
+        text-align: right;
+    }
+    .mainHeader_contactInfo_phone{
+        background: none;
+    }
+    .mainHeader_contactInfo_address{
+        color: white
+    }
+    .mainNav{
+        background: rgba(0,0,0,0.75)
+    }
+    .banner{
+        margin-top: -190px;
+        z-index: -1000;
+    }
+    .bannerImg{
+        height: 600px;
+    }
+    .bannerContent{
+        font-size: 2em;
+    }
+    .main{
+        padding-bottom: 15px;
+    }
+    .mainAboutDescription .colum:nth-child(2){
+        padding-left: 20px;
+        font-size: .9em;
+    }
+    .mainAboutDescription .btn{
+        margin: 0;
+    }
+    .todaySpecial .column{
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
+    .todaySpecial_img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .mainFooter .containerFlex{
+        align-items: flex-start;
+    }
+    .column50{
+        width: 49%;
+    }
+    .column50_25{
+        width: 49%;
+    }
+    .column33{
+        width: 32%;
+    }
+}
+
+@media screen and (min-width:768px){
+    .mainTitle{
+        font-size: 2.2em;
+    }
+    .mainAboutDescription{
+        margin-top: 30px;
+    }
+    .mainAboutDescription .column50:nth-child(2){
+        font-size: 1em;
+    }
+    .mainAboutDescription .column50:nth-child(2) .columnTxt{
+        line-height: 30px;
+    }
+    .column50_25{
+        width: 24.5%
+    }
+    .columnTitle{
+        font-size: 1em;
+    }
+    .groupTitle{
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .container{
+        width: 1000px;
+    }
+    .logo{
+        font-size: 2em;
+        padding: 0;
+    }
+    .mainHeader_contactInfo_phone, .mainHeader_contactInfo_address{
+        padding-right: 0;
+        font-size: 1.15em;
+    }
+    .mainNav{
+        padding: 0;
+    }
+    .bannerImg{
+        height: 700px;
+    }
+    .bannerContent{
+        font-size: 2.5em;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu{
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .menuLink{
+        padding: 20px;
+    }
+    .groupColor .container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .mainTitle{
+        font-size: 2.5em;
+    }
+    .mainAboutDescription .column50:nth-child(2) .columnTxt{
+        line-height: 45px;
+    }
+    .todaySpecial_title{
+        font-size: 1.4em;
+    }
+    .todaySpecial_price{
+        font-size: 1.8em;
+    }
+    .mainFooter{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .container{
+        width: 1400px;
+    }
+    .bannerImg{
+        height: 1000px;
+    }
+    .mainAboutDescription .column:nth-child(1) img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+    .todaySpecial_img{
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

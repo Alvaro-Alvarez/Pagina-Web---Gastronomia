@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Restaurant</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+<body>
+  <div class="modal" id="modal">
+      <div class="modalContent">
+          <img src="" alt="" class="modalImg" id="modalImg">
+      </div>
+      <div class="modalBoton" id="modalBoton">X</div>
+  </div>
+   <header class="mainHeader">
+       <div class="container containerFlex">
+           <div class="logoContainer column column50">
+               <h1 class="logo">Galería | Your Restaurant</h1>
+           </div>
+           <div class="mainHeader_contactInfo column column50">
+               <p class="mainHeader_contactInfo_phone">
+                   <span class="icon-phone">999-999-999</span>
+               </p>
+               <p class="mainHeader_contactInfo_address">
+                   <span class="icon-location">Calle falsa 123 - Buenos Aires, Argentina</span>
+               </p>
+           </div>
+       </div>
+   </header>
+    <nav class="mainNav">
+        <div class="container containerFlex">
+            <span class="icon-menu" id="btnMenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu--item"><a href="index.html" class="menuLink">Inicio</a></li>
+                <li class="menu--item"><a href="nosotros.html" class="menuLink">Nosotros</a></li>
+                <li class="menu--item"><a href="galeria.html" class="menuLink menuLink_select">Galería</a></li>
+                <li class="menu--item"><a href="contacto.html" class="menuLink">Contacto</a></li>
+            </ul>
+            <div class="socialIcon">
+                <a href="http://www.facebook.com" class="socialIcon_link"><span class="icon-facebook"></span></a>
+                <a href="http://twitter.com" class="socialIcon_link"><span class="icon-twitter"></span></a>
+                <a href="" class="socialIcon_link"><span class="icon-mail"></span></a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="banner">
+        <img src="img/banner-gallery.jpeg" alt="" class="bannerImg">
+        <div class="bannerContent">La mejor y exquisita comida está aquí</div>
+    </section>
+    
+    <main class="main">
+        <div class="group gallery">
+            <h2 class="groupTitle">Nuestra Galería</h2>
+            <div class="container containerFlex">
+                <div class="column50_25">
+                    <img src="img/gallery/gallery1.jpeg" alt="" class="galleryImg galleryImg_big">
+                    <img src="img/gallery/gallery2.jpeg" alt="" class="galleryImg galleryImg_small">
+                </div>
+                <div class="column50_25">
+                    <img src="img/gallery/gallery3.jpeg" alt="" class="galleryImg galleryImg_small">
+                    <img src="img/gallery/gallery4.jpeg" alt="" class="galleryImg galleryImg_big">
+                </div>
+                <div class="column50_25">
+                    <img src="img/gallery/gallery5.jpeg" alt="" class="galleryImg galleryImg_big">
+                    <img src="img/gallery/gallery6.jpeg" alt="" class="galleryImg galleryImg_small">
+                </div>
+                <div class="column50_25">
+                    <img src="img/gallery/gallery7.jpeg" alt="" class="galleryImg galleryImg_small">
+                    <img src="img/gallery/gallery8.jpeg" alt="" class="galleryImg galleryImg_big">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="mainFooter">
+            <div class="container containerFlex">
+                <div class="column column33">
+                    <h2 class="columnTitle">¿Por qué visitarnos?</h2>
+                    <p class="columnTxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit a modi sapiente laborum aperiam sunt consequatur deleniti quasi atque dolorum voluptate, quo tenetur aut repudiandae maiores deserunt reiciendis eligendi officia?</p>
+                </div>
+                <div class="column column33">
+                    <h2 class="columnTitle">Contactanos</h2>
+                    <p class="columnTxt">Calle falsa 123 - Buenos Aires ,Argentina</p>
+                    <p class="columnTxt">Telefono: 999-999-999</p>
+                    <p class="columnTxt">alvaro.alvarez.porcel@hotmail.com</p>
+                </div>
+                <div class="column column33">
+                    <h2 class="columnTitle">Síguenos en nuestras rede sociales</h2>
+                    <p class="columnTxt"><a href="" class="icon-facebook">Facebook</a></p>
+                    <p class="columnTxt"><a href="" class="icon-twitter">Síguenos en twitter</a></p>
+                    <p class="columnTxt"><a href="" class="icon-youtube">Visita nuetri canal</a></p>
+                </div>
+                
+                <p class="copy">© 2018 Your Restaurant | Todos los derechos reservados</p>
+            </div>
+        </footer>
+        <script src="js/menu.js"></script>
+        <script src="js/modal.js"></script>
+</body>
+</html>
